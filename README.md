@@ -117,3 +117,130 @@
 
        weight=dict(kasun=12,madu=12)
        {'madu': 12, 'kasun': 12}
+
+#### Conditionals
+
+        2 in [1,2,3]
+        1 == 1
+        1 != 2
+        1.0 == 1
+
+        if True:
+        ...     print("something is True")
+        ...
+        something is True
+
+        name="KasunMAdura"
+        if len(name) >= 5:
+        ...    print ("name is long")
+        ...else:
+        ...    print ("name is shot")
+
+        if len(name) >= 5:
+        ...    print ("name is long")
+        ...elif len(name) == 4:
+        ...    print ("name is average")
+        ...else
+        ...    print ("name is True")
+
+#### Loops
+
+        count = 0
+        while count < 10:
+        ...    print ("ssssss")
+        ...    count += 1
+
+        count = 0
+        while count < 10:
+              if  %2 == 0:
+        ...    print ("ssssss")
+        ...    count += 1
+
+
+        while count < 10 :
+        ...     if count %2 == 0:
+        ...         count +=1
+        ...         continue
+        ...     print ("we are continuing  odd numbers %s" % count)
+        ...     count +=1
+        ...
+        we are continuing  odd numbers 1
+        we are continuing  odd numbers 3
+        we are continuing  odd numbers 5
+        we are continuing  odd numbers 7
+        we are continuing  odd numbers 9
+
+        while count < 10:
+        ...     if count % 2 == 0:
+        ...        break
+        ...     print (" we are contining %s" % count)
+        ...     count +=1
+        ...
+
+
+       colors= ['red','green','yellow']
+       for x in colors:
+       ...    print(x)
+       ...
+
+
+       ages = { 'kasun': 23, 'madu': 45}
+
+       for key in ages:
+       ...    print(key)
+       ...
+
+       for key, value in ages.items():
+       ...    print (key)
+       ...    print (value)
+       ...
+
+       for key in ages.values():
+       ...    print (key)
+       ...
+
+#### Logic opertation
+
+      if not len("something") > 10:
+      ...    print("it's not")
+      ...
+
+      'a' is 'a'
+      1 == 1.0
+      True
+      1 is 1.0
+      False
+
+      id(1.0)
+      94123033188016
+      id(1)
+      94123033117032
+
+#### And operator (output is 1st false value or last True value)
+
+      1 and 2
+      2
+      0 and 1
+      0
+      bool(0)
+      False
+      var= None
+      var and str(var) ----> no output
+      var= 1
+      var and str(var) ----> output is 1
+      1 and 2 and 0 and 3 ---> output is 0
+
+### OR operator (1st True value)
+
+     1 or 2
+     1
+     0 or 2
+     2
+     var = None
+     other_var = var or "default"
+     other_var --> output is 'default'
+     var=1
+     other_var = var or "default"
+     other_var --> output is 1
+
+     0 or {} or 2 True --> output is 2
