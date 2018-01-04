@@ -152,7 +152,7 @@
 
         count = 0
         while count < 10:
-              if  %2 == 0:
+              if count %2 == 0:
         ...    print ("ssssss")
         ...    count += 1
 
