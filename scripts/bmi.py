@@ -6,6 +6,7 @@ def gather_info():
     unit = raw_input("Are you measurements in metric of imperial units?").lower().strip()
     return (height,weight,unit)
 
+#def calculate_bmi(weight,height,unit):
 def calculate_bmi(weight,height,unit='metric'):
     if unit == 'metric':
         bmi =  (weight/(height ** 2))
@@ -21,6 +22,7 @@ while True:
         break
     elif unit.startswith('m'):
         calculate_bmi(weight, height)
+       # calculate_bmi(weight, height, unit = 'metric')
         break
     else:
         print ("Error : Unknow measure system.Please use imperial or metric")
