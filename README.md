@@ -244,3 +244,30 @@
      other_var --> output is 1
 
      0 or {} or 2 True --> output is 2
+
+### install pip and command
+
+    apt-get install python-pip
+    pip install --user package
+
+    pip freeze --user
+    pip freeze --user | grep boto3 > requirements.txt
+    pip install --user -r requirements.txt
+
+    pip uninstall wheel
+    pip freeze --user > requirements.txt
+    pip uninstall -r requirements.txt
+
+
+### Virualenv (Sanbox python enviroment)
+
+    pip install --user Virualenv
+    which virtualenv
+    ls /.local/bin/virtualenv
+    ~/.local/bin/virtualenv venvs/experiment or virtualenv venvs/experiment
+    source venvs/experiment/bin/activate
+    pip list
+    pip install flask
+    deactivate
+
+    
