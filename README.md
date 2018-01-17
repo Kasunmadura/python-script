@@ -2,7 +2,7 @@
 
 This repo help  you to start python scripting for day to day sysadmin and devops Workes
 
-* [Helper files](/helpers)
+* [Helper files](/helper)
 * [Course Scripts](/scripts)
 * [projects](/projects)
 
