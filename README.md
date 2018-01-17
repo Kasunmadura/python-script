@@ -1,6 +1,6 @@
 ### Python Basic
 
-This repo help  you to start python scripting for day to day sysadmin and devops Workes
+This repo help  you to start python scripting for day today sysadmin and devops Workes
 
 * [Helper files](/helper)
 * [Course Scripts](/scripts)
