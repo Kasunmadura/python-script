@@ -1,5 +1,11 @@
 ### Python Basic
 
+This repo help  you to start python scripting for day to day sysadmin and devops Workes
+
+* [Helper files](/helpers)
+* [Course Scripts](/scripts)
+* [projects](/projects)
+
 #### String
 
       "double".find.('s')
@@ -269,5 +275,3 @@
     pip list
     pip install flask
     deactivate
-
-    
