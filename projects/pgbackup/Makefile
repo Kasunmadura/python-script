@@ -6,4 +6,4 @@ install:
 	pip install --dev --skip-lock
 
 test:
-	PYTHONPATH=./srv pytest
+	PYTHONPATH=./srv  pytest

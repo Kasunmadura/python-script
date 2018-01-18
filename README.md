@@ -4,7 +4,7 @@ This repo help  you to start python scripting for day today sysadmin and devops 
 
 * [Helper files](/helper)
 * [Course Scripts](/scripts)
-* [projects](/projects)
+* [Projects with Test Driving](/projects)
 
 #### String
 
