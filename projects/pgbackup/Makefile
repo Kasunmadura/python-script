@@ -3,7 +3,7 @@
 default: test
 
 install:
-	pip install --dev --skip-lock
+	pipenv install --dev --skip-lock
 
 test:
-	PYTHONPATH=./srv  pytest
+	PYTHONPATH=./src pytest

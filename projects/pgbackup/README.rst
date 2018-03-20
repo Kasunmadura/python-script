@@ -1,47 +1,44 @@
-pbbackup
-=======
+pgbackup
+========
 
-CLI for backing up remove Postgres database locally or to AWS s3.
+CLI for backing up remote PostgreSQL databases locally or to AWS S3.
 
+Preparing for Development
+-------------------------
 
-Preparing for the Deverlopment
----------------------------------
-
-1.Ensure 'pip' and 'pipenv' are installed
-2.Clone this repo
-3.Fetch devlopment dependencies: 'make install'
-
+1. Ensure ``pip`` and ``pipenv`` are installed.
+2. Clone repository: ``git clone git@github.com:example/pgbackup``
+3. Fetch development dependencies: ``make install``
 
 Usage
 -----
 
-Pass in a full database URl , the storage driver , and the destination.
+Pass in a full database URL, the storage driver, and destination.
 
 S3 Example w/ bucket name:
 
 ::
 
-  $ pgbackup postgres://demo@example.com:5432/db_name --driver s3 backup
+    $ pgbackup postgres://bob@example.com:5432/db_one --driver s3 backups
 
-
-Local Example with local path:
-
-::
-
-  $ pgbackup postgres://demo@example.com:5432/db_name --driver local /var/db_backup/dump.sql
-
-
-Running test
-------------
-
-Run tests local using 'make' if virtualenv is active:
+Local Example w/ local path:
 
 ::
 
-  $ make
+    $ pgbackup postgres://bob@example.com:5432/db_one --driver local /var/local/db_one/backups/dump.sql
 
-if virtualenv env not actived
+Running Tests
+-------------
+
+Run tests locally using ``make`` if virtualenv is active:
 
 ::
 
-  $ pipenv run make
+    $ make
+
+If virtualenv isn't active then use:
+
+::
+
+    $ pipenv run make
+
