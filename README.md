@@ -1,4 +1,4 @@
-### Python Basic
+### Python Basic (2.7)
 
 This repo help  you to start python scripting for day today sysadmin and devops Workes
 
